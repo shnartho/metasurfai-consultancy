@@ -8,19 +8,19 @@ import { FooterSectionTitle } from '@/components/footer'
 
 const courseMenu: Array<Navigation> = [
   {
-    label: 'UI/UX Design',
+    label: 'AI Strategy',
     path: '#',
   },
   {
-    label: 'Mobile Development',
+    label: 'Data Science',
     path: '#',
   },
   {
-    label: 'Machine Learning',
+    label: 'AI Development',
     path: '#',
   },
   {
-    label: 'Web Development',
+    label: 'AI Training',
     path: '#',
   },
 ]
@@ -29,8 +29,8 @@ const pageMenu = headerNavigations
 
 const companyMenu: Array<Navigation> = [
   { label: 'Contact Us', path: '#' },
-  { label: 'Privacy & Policy', path: '#' },
-  { label: 'Term & Condition', path: '#' },
+  { label: 'Privacy Policy', path: '#' },
+  { label: 'Terms & Conditions', path: '#' },
   { label: 'FAQ', path: '#' },
 ]
 
