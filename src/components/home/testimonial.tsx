@@ -89,7 +89,7 @@ const HomeTestimonial: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Students{' '}
+                Clients{' '}
                 <Box
                   sx={{
                     position: 'absolute',
