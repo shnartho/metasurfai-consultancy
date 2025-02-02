@@ -1,0 +1,11 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src",
+        "headers": {
+          "x-force-static": "1"
+        }
+      }
+    ]
+  }
