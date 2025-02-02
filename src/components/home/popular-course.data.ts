@@ -9,7 +9,7 @@ export const data: Array<Course> = [
     ratingCount: 8,
     price: 25,
     category: 'Beginner',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const data: Array<Course> = [
     ratingCount: 15,
     price: 20,
     category: 'Intermediate',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const data: Array<Course> = [
     ratingCount: 7,
     price: 30,
     category: 'Beginner',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const data: Array<Course> = [
     ratingCount: 12,
     price: 30,
     category: 'Intermediate',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export const data: Array<Course> = [
     ratingCount: 32,
     price: 35,
     category: 'Intermediate',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ export const data: Array<Course> = [
     ratingCount: 14,
     price: 35,
     category: 'Beginner',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ export const data: Array<Course> = [
     ratingCount: 6,
     price: 25,
     category: 'Beginner',
-    website: 'https://my.workee.net/shnartho',
+    website: 'https://my.workee.net/consultant-metasurf-ai',
   },
 ];
 
