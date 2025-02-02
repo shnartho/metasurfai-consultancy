@@ -16,20 +16,20 @@ interface ExpItemProps {
   item: Exp
 }
 
-const exps: Array<Exp> = [
-  {
-    label: 'Students',
-    value: '10K+',
-  },
-  {
-    label: 'Quality Course',
-    value: '20+',
-  },
-  {
-    label: 'Experience Mentors',
-    value: '10+',
-  },
-]
+// const exps: Array<Exp> = [
+//   {
+//     label: 'Students',
+//     value: '10K+',
+//   },
+//   {
+//     label: 'Quality Course',
+//     value: '20+',
+//   },
+//   {
+//     label: 'Experience Mentors',
+//     value: '10+',
+//   },
+// ]
 
 const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
@@ -48,7 +48,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 }
 
 const handleBookMe = (): void => {
-  window.open('https://my.workee.net/shnartho', '_blank');
+  window.open('https://my.workee.net/consultant-metasurf-ai', '_blank');
 };
 
 const HomeHero: FC = () => {
@@ -56,7 +56,7 @@ const HomeHero: FC = () => {
     <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 textAlign: { xs: 'center', md: 'left' },
@@ -87,7 +87,7 @@ const HomeHero: FC = () => {
                       backgroundColor: 'unset',
                     }}
                   >
-                    Learn{' '}
+                    Power{' '}
                     <Box
                       sx={{
                         position: 'absolute',
@@ -101,7 +101,7 @@ const HomeHero: FC = () => {
                       <img src="/images/headline-curve.svg" alt="Headline curve" />
                     </Box>
                   </Typography>
-                  AI,{' '}
+                  Your{' '}
                   <Typography
                     component="span"
                     sx={{
@@ -117,7 +117,6 @@ const HomeHero: FC = () => {
                       },
                     }}
                   >
-                    Blockchain
                     <svg version="1.1" viewBox="0 0 3183 3072">
                       <g id="Layer_x0020_1">
                         <path
@@ -135,85 +134,43 @@ const HomeHero: FC = () => {
                       </g>
                     </svg>
                   </Typography>{' '}
+                  <br/>
+                  Business with
                   <br />
-                  Programming for Future
+                  AI & Automation
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "Step into the Future: Learn AI, Blockchain, and Advanced Programming to Propel Your Career Forward."
+                    "We help businesses integrate AI to optimize processes, enhance customer experiences, and unlock new revenue streams."
                   }
                 </Typography>
               </Box>
               <Box sx={{ '& button': { mr: 2 } }}>
                 <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="contained" onClick={handleBookMe}>
-                    Get Started
+                    Schedule a Call
                   </StyledButton>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="outlined" onClick={handleBookMe} startIcon={<PlayArrowIcon />}>
-                    Watch Video
+                    Watch Demo
                   </StyledButton>
                 </ScrollLink>
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={5} sx={{ position: 'relative' }}>
-            {/* Sertificate badge */}
-            <Box
-              sx={{
-                position: 'absolute',
-                bottom: 30,
-                left: { xs: 0, md: -150 },
-                boxShadow: 1,
-                borderRadius: 3,
-                px: 2,
-                py: 1.4,
-                zIndex: 1,
-                backgroundColor: 'background.paper',
-                display: 'flex',
-                alignItems: 'flex-start',
-                width: 280,
-              }}
-            >
-              <Box
-                sx={{
-                  boxShadow: 1,
-                  borderRadius: '50%',
-                  width: 44,
-                  height: 44,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  mr: 2,
-                  '& img': { width: '32px !important', height: 'auto' },
-                }}
-              >
-                <Image src="/images/certificate.png" alt="Certificate icon" width={50} height={50} quality={97} />
-              </Box>
-              <Box>
-                <Typography
-                  component="h6"
-                  sx={{ color: 'secondary.main', fontSize: '1.1rem', fontWeight: 700, mb: 0.5 }}
-                >
-                  Certificate
-                </Typography>
-                <Typography variant="subtitle1" sx={{ color: 'text.secondary', lineHeight: 1.3 }}>
-                  There are certificates for all courses.
-                </Typography>
-              </Box>
-            </Box>
-            <Box sx={{ lineHeight: 0 }}>
-              <Image src="/images/home-hero2.jpg" width={775} height={787} alt="Hero img" />
+          <Grid item xs={12} md={6} sx={{ position: 'relative', display: 'flex', alignItems: 'flex-end' }}>
+          <Box sx={{ lineHeight: 0, position: 'relative', top: { xs: -10, md: -20 } }}>
+          <Image src="/images/home-hero2.jpg" width={775} height={687} alt="Hero img" />
               <meta name="author" content="Freepik" />
-              <meta name="source" content="https://www.freepik.com/free-photo/beautiful-young-woman-working-using-laptop-very-happy-excited-doing-winner-gesture-with-arms-raised-smiling-screaming-success-white-wall-celebration-concept_8471735.htm#query=business%20woman%20with%20laptop&position=27&from_view=keyword&track=ais_user&uuid=64f3bd09-f2cb-42b6-a888-a367aa861db1" />
+              <meta name="source" content="https://i.ibb.co/kR9sK2P/consult3.png" />
             </Box>
           </Grid>
         </Grid>
 
-        {/* Experience */}
+        {/* Experience
         <Box sx={{ boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
           <Grid container spacing={2}>
             {exps.map((item) => (
@@ -222,7 +179,7 @@ const HomeHero: FC = () => {
               </Grid>
             ))}
           </Grid>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   )
