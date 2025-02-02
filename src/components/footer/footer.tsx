@@ -19,8 +19,7 @@ const Footer: FC = () => {
                 Metasurf consultancy
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                Metasurf consultancy is an online learning platform that has been operating since 2018 until now.
-              </Typography>
+              MetaSurf AI Consultancy specializes in AI-driven automation and optimization, helping businesses streamline operations and enhance efficiency.              </Typography>
               <FooterSocialLinks />
             </Box>
           </Grid>
