@@ -4,7 +4,7 @@ import Container from '@mui/material/Container'
 import IconButton from '@mui/material/IconButton'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { Logo } from '@/components/logo'
-import { Navigation, AuthNavigation } from '@/components/navigation'
+import { Navigation, Contact } from '@/components/navigation'
 import { useTheme } from '@mui/material/styles'
 import { Menu, Close } from '@mui/icons-material'
 
@@ -28,7 +28,7 @@ const Header: FC = () => {
               width: '100%',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between',
+              justifyContent: 'flex-end',
               flexDirection: { xs: 'column', md: 'row' },
 
               transition: (theme) => theme.transitions.create(['top']),
@@ -45,7 +45,7 @@ const Header: FC = () => {
           >
             <Box /> {/* Magic space */}
             <Navigation />
-            <AuthNavigation />
+            <Contact />
             {visibleMenu && matchMobileView && (
               <IconButton
                 sx={{
