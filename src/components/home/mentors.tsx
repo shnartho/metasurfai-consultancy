@@ -1,109 +1,92 @@
-import React, { FC } from 'react'
+import React from 'react'
 import Box from '@mui/material/Box'
-import Slider, { Settings } from 'react-slick'
-import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import IconButton from '@mui/material/IconButton'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import { useTheme, styled } from '@mui/material/styles'
-import IconArrowBack from '@mui/icons-material/ArrowBack'
-import IconArrowForward from '@mui/icons-material/ArrowForward'
-import { MentorCardItem } from '@/components/mentor'
+import Button from '@mui/material/Button'
+import Image from 'next/image'
 import { data } from './mentors.data'
 
-interface SliderArrowArrow {
-  onClick?: () => void
-  type: 'next' | 'prev'
-  className?: 'string'
-}
-
-const SliderArrow: FC<SliderArrowArrow> = (props) => {
-  const { onClick, type, className } = props
-  return (
-    <IconButton
-      sx={{
-        backgroundColor: 'background.paper',
-        color: 'primary.main',
-        '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' },
-        bottom: '-28px !important',
-        left: 'unset !important',
-        right: type === 'prev' ? '60px !important' : '0 !important',
-        zIndex: 10,
-        boxShadow: 1,
-      }}
-      disableRipple
-      color="inherit"
-      onClick={onClick}
-      className={className}
-    >
-      {type === 'next' ? <IconArrowForward sx={{ fontSize: 22 }} /> : <IconArrowBack sx={{ fontSize: 22 }} />}
-    </IconButton>
-  )
-}
-
-const StyledDots = styled('ul')(({ theme }) => ({
-  '&.slick-dots': {
-    position: 'absolute',
-    left: 0,
-    bottom: -20,
-    paddingLeft: theme.spacing(1),
-    textAlign: 'left',
-    '& li': {
-      marginRight: theme.spacing(2),
-      '&.slick-active>div': {
-        backgroundColor: theme.palette.primary.main,
-      },
-    },
-  },
-}))
-
-const HomeOurMentors: FC = () => {
-  const { breakpoints } = useTheme()
-  const matchMobileView = useMediaQuery(breakpoints.down('md'))
-
-  const sliderConfig: Settings = {
-    infinite: true,
-    // autoplay: true,
-    speed: 300,
-    slidesToShow: matchMobileView ? 1 : 3,
-    slidesToScroll: 1,
-    prevArrow: <SliderArrow type="prev" />,
-    nextArrow: <SliderArrow type="next" />,
-    dots: true,
-    appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
-    customPaging: () => (
-      <Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />
-    ),
-  }
-
+const Mentors: React.FC = () => {
   return (
     <Box
-      id="mentors"
       sx={{
-        pt: {
-          xs: 6,
-          md: 8,
-        },
-        pb: {
-          xs: 8,
-          md: 12,
-        },
-        backgroundColor: '#ecf3f3',
+        position: 'relative',
+        py: 5,
+        backgroundImage: 'url(/images/backgroundMentors.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      <Container maxWidth="lg">
-        <Typography variant="h1" sx={{ fontSize: 40 }}>
-          Our Expert Mentors
+      <Box
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.44)',
+          zIndex: 1,
+        }}
+      />
+      <Box sx={{ position: 'relative', zIndex: 2 }}>
+      <Box sx={{ textAlign: 'begin', mb: 5, ml: 19 }}>
+        <img src="/images/industries/channel.png" alt="Channel Icon" />
+        <Typography variant="h2" sx={{ mt: 2, color: 'white' }}>
+          Our AI leaders
         </Typography>
-
-        <Slider {...sliderConfig}>
-          {data.map((item) => (
-            <MentorCardItem key={String(item.id)} item={item} />
-          ))}
-        </Slider>
-      </Container>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          gap: 2,
+        }}
+      >
+        {data.map((mentor) => (
+          <Box
+            key={mentor.id}
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              p: 2,
+              backgroundColor: 'trasnparent',
+              border: '1px solid white',
+              mb: 2,
+              width: '400px',
+            }}
+          >
+            <Box
+              sx={{
+                width: 100,
+                height: 100,
+                borderRadius: '50%',
+                overflow: 'hidden',
+                background: 'rgb(242, 242, 242)',
+                mr: 8,
+              }}
+            >
+            <Image src={mentor.photo} width={100} height={90} alt={'Mentor ' + mentor.name} 
+            style={{ objectFit: 'cover', marginTop: 10 }}/>
+            </Box>
+            <Box sx={{ flex: 1 }}>
+              <Typography component="h2" variant="h5" sx={{ fontSize: '1.4rem', color: 'white' }}>
+                {mentor.name}
+              </Typography>
+              <Typography sx={{ color: 'white' }}>{mentor.category}</Typography>
+              <Button
+                variant="contained"
+                sx={{ mt: 1, backgroundColor: 'red', color: 'white' }}
+                href={mentor.contact}
+              >
+                Contact {mentor.name}
+              </Button>
+            </Box>
+          </Box>
+        ))}
+      </Box>
     </Box>
+  </Box>
   )
 }
 
-export default HomeOurMentors
+export default Mentors
