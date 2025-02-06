@@ -3,62 +3,38 @@ import type { Testimonial } from '@/interfaces/testimonial'
 export const data: Array<Testimonial> = [
   {
     id: 1,
-    title: 'Detailed learning materials',
+    title: 'Transformed Our Business Operations',
     content:
-      'Classes that provide very detailed material in term of making UI UX Design starting team making low and hight quality, system designs, using data layout and make prototypes and testing.',
+      'MetaSurf AI helped us implement AI solutions that streamlined our data processing workflow. Their consultation was thorough and the results exceeded our expectations. We saw a 40% increase in efficiency within three months.',
     user: {
       id: 1,
-      name: 'Luis Sera',
-      professional: 'UI/UX Engineer',
+      name: 'Sam Chen',
+      professional: 'CTO, TechFlow Solutions',
       photo: '1.jpg',
     },
   },
   {
     id: 2,
-    title: 'Best Quality Online Course!',
+    title: 'Expert AI Implementation',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Their expertise in AI integration was invaluable. The team provided clear guidance on implementing machine learning models for our customer service platform. The ROI has been remarkable, with customer satisfaction scores improving by 60%.',
     user: {
       id: 1,
-      name: 'Riski',
-      professional: 'Software Engineer',
+      name: 'Michael Rodriguez',
+      professional: 'Director of Innovation',
       photo: '2.jpg',
     },
   },
   {
     id: 3,
-    title: 'Very complete class',
+    title: 'Game-Changing AI Strategy',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'MetaSurf AI\'s consultation helped us develop a comprehensive AI roadmap. Their insights into predictive analytics transformed our decision-making process. They truly understand both the technical and business aspects of AI implementation.',
     user: {
       id: 1,
-      name: 'Nguyễn Văn',
-      professional: 'FullStack Designer',
+      name: 'John Watson',
+      professional: 'Operations Manager',
       photo: '3.jpg',
-    },
-  },
-  {
-    id: 4,
-    title: 'Great Quality!',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    user: {
-      id: 1,
-      name: 'Diana Jordan',
-      professional: 'SEO Expert',
-      photo: '4.jpg',
-    },
-  },
-  {
-    id: 5,
-    title: 'Detailed learning materials',
-    content:
-      'Classes that provide very detailed material in term of making UI UX Design starting team making low and hight quality, system designs, using data layout and make prototypes and testing.',
-    user: {
-      id: 1,
-      name: 'Ashley Graham',
-      professional: 'Back-End Developer',
-      photo: '5.jpg',
     },
   },
 ]
