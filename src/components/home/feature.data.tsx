@@ -12,23 +12,23 @@ interface Data {
 
 export const data: Data[] = [
   {
-    title: 'Easy Accessable',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'AI Expertise',
+    description: 'PhD level and MSc-level AI experts with track record of applying AI in business',
     icon: <ArtTrackIcon />,
   },
   {
-    title: 'More Affordable Cost',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Flexibility',
+    description: 'Wide range of skills: data scientists, front and Backend engineers, AI, LM and DevOps experts',
     icon: <AttachMoneyIcon />,
   },
   {
-    title: 'Flexible Study Time',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Speed',
+    description: 'Efficent development of Al solutions thanks to instant access to top-level experts',
     icon: <LocalLibraryIcon />,
   },
   {
-    title: 'Consultation With Mentor',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Risk mitigation',
+    description: 'Al consultants help reduce risks in adopting Al, from data privacy concerns to ethical considerations, ensuring responsible and compliant implementation.',
     icon: <ContactSupportIcon />,
   },
 ]
