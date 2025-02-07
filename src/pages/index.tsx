@@ -6,20 +6,25 @@ import { MainLayout } from '@/components/layout'
 
 const DynamicHomeHero = dynamic(() => import('../components/home/hero'))
 const DynamicHomeFeature = dynamic(() => import('../components/home/feature'))
-// const DynamicHomePopularCourse = dynamic(() => import('../components/home/popular-courses'))
+const DynamicHomeIndustries = dynamic(() => import('../components/home/industries'))
 const DynamicHomeTestimonial = dynamic(() => import('../components/home/testimonial'))
-// const DynamicHomeOurMentors = dynamic(() => import('../components/home/mentors'))
-// const DynamicHomeNewsLetter = dynamic(() => import('../components/home/newsletter'))
-
+const DynamicHomeOurMentors = dynamic(() => import('../components/home/leaders'))
+const DynamicHomeNewsLetter = dynamic(() => import('../components/home/newsletter'))
+const DynamicHomeOurBusiness = dynamic(() => import('../components/home/ourbusiness'))
+const DynamicHomeRoadMap = dynamic(() => import('../components/home/roadmapsolving'))
+const DynamicHomeTransformBusiness = dynamic(() => import('../components/home/transformbusiness'))
 const Home: NextPageWithLayout = () => {
   return (
     <>
       <DynamicHomeHero />
-      {/* <DynamicHomePopularCourse /> */}
+      <DynamicHomeIndustries/>
+      <DynamicHomeOurBusiness />
       <DynamicHomeFeature />
+      <DynamicHomeOurMentors />
+      <DynamicHomeRoadMap />
+      <DynamicHomeTransformBusiness />
       <DynamicHomeTestimonial />
-      {/* <DynamicHomeOurMentors /> */}
-      {/* <DynamicHomeNewsLetter /> */}
+      <DynamicHomeNewsLetter />
     </>
   )
 }
