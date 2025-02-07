@@ -1,6 +1,6 @@
-import type { Mentor } from '@/interfaces/mentor'
+import type { Leader } from '@/interfaces/leader'
 
-export const data: Array<Mentor> = [
+export const data: Array<Leader> = [
   {
     id: 1,
     photo: '/images/mentors/nayem.jpg',

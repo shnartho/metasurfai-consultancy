@@ -4,13 +4,13 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 
-import { Mentor } from '@/interfaces/mentor'
+import { Leader } from '@/interfaces/leader'
 
 interface Props {
-  item: Mentor
+  item: Leader
 }
 
-const MentorCardItem: FC<Props> = ({ item }) => {
+const LeaderCardItem: FC<Props> = ({ item }) => {
   return (
     <Box
       sx={{
@@ -51,4 +51,4 @@ const MentorCardItem: FC<Props> = ({ item }) => {
   )
 }
 
-export default MentorCardItem
+export default LeaderCardItem

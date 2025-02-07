@@ -3,15 +3,15 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Image from 'next/image'
-import { data } from './mentors.data'
+import { data } from './leaders.data'
 
-const Mentors: React.FC = () => {
+const Leaders: React.FC = () => {
   return (
     <Box
       sx={{
         position: 'relative',
         py: 5,
-        backgroundImage: 'url(/images/backgroundMentors.jpg)',
+        backgroundImage: 'url(/images/backgroundleaders.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -42,9 +42,9 @@ const Mentors: React.FC = () => {
           gap: 2,
         }}
       >
-        {data.map((mentor) => (
+        {data.map((leader) => (
           <Box
-            key={mentor.id}
+            key={leader.id}
             sx={{
               display: 'flex',
               alignItems: 'center',
@@ -65,20 +65,20 @@ const Mentors: React.FC = () => {
                 mr: 8,
               }}
             >
-            <Image src={mentor.photo} width={100} height={90} alt={'Mentor ' + mentor.name} 
+            <Image src={leader.photo} width={100} height={90} alt={'leader ' + leader.name} 
             style={{ objectFit: 'cover', marginTop: 10 }}/>
             </Box>
             <Box sx={{ flex: 1 }}>
               <Typography component="h2" variant="h5" sx={{ fontSize: '1.4rem', color: 'white' }}>
-                {mentor.name}
+                {leader.name}
               </Typography>
-              <Typography sx={{ color: 'white' }}>{mentor.category}</Typography>
+              <Typography sx={{ color: 'white' }}>{leader.category}</Typography>
               <Button
                 variant="contained"
                 sx={{ mt: 1, backgroundColor: 'red', color: 'white' }}
-                href={mentor.contact}
+                href={leader.contact}
               >
-                Contact {mentor.name}
+                Contact {leader.name}
               </Button>
             </Box>
           </Box>
@@ -89,4 +89,4 @@ const Mentors: React.FC = () => {
   )
 }
 
-export default Mentors
+export default Leaders;

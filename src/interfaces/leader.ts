@@ -1,6 +1,6 @@
 import type { User } from './user'
 
-export interface Mentor extends Omit<User, 'professional'> {
+export interface Leader extends Omit<User, 'professional'> {
   photo: string
   name: string
   category: string
