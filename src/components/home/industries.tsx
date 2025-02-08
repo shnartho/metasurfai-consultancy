@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { data } from './industries.data';
 
-  const Industries = () => {
+  const Industries: FC = () => {
     return (
       <Box sx={{ 
         backgroundColor: 'white',

@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Image from 'next/image'
 
-const transformbusiness = () => {
+const transformbusiness: FC = () => {
   return (
     <Box sx={{ p: 4, backgroundColor: 'white' }}>
       <Box sx={{ 
@@ -34,7 +34,7 @@ const transformbusiness = () => {
               }
             }}
           >
-            Let's talk
+            Let&apos;s talk
           </Button>
         </Box>
 

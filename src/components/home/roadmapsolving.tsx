@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { data } from './roadmapsolving.data';
 
-const RoadmapSolving = () => {
+const RoadmapSolving: FC = () => {
   return (
     <Box 
       sx={{ 

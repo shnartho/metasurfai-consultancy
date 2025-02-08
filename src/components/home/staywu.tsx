@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
@@ -36,7 +36,7 @@ const textFieldStyle = {
   }
 };
 
-const StayWithUs = () => {
+const StayWithUs: FC = () => {
   return (
     <Box sx={{
       position: 'relative',

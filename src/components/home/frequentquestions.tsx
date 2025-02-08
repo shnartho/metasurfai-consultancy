@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Accordion from '@mui/material/Accordion'
@@ -8,7 +8,7 @@ import AddIcon from '@mui/icons-material/Add'
 import Divider from '@mui/material/Divider'
 import { data } from './frequentquestions.data'
 
-const FrequentQuestions = () => {
+const FrequentQuestions: FC = () => {
   return (
     <Box sx={{ 
       p: 4,

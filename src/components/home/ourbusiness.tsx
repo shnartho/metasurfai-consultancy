@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { data } from './ourbusiness.data'
 
-const OurBusiness = () => {
+const OurBusiness: FC = () => {
   return (
     <Box sx={{ p: 4, backgroundColor: 'white', position: 'relative', overflow: 'hidden' }}>
       <Typography variant="h1" component="h1" sx={{ mb: 2, textAlign: 'center' }}>
