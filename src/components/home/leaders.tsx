@@ -28,8 +28,8 @@ const Leaders: React.FC = () => {
         }}
       />
       <Box sx={{ position: 'relative', zIndex: 2 }}>
-      <Box sx={{ textAlign: 'begin', mb: 5, ml: 19 }}>
-        <img src="/images/industries/channel.png" alt="Channel Icon" />
+      <Box sx={{ textAlign: 'begin', mb: 5, ml: 19  }}>
+        <img src="/images/leaders/message.png" alt="Channel Icon" style={{ filter: 'invert(1)'}}/>
         <Typography variant="h2" sx={{ mt: 2, color: 'white' }}>
           Our AI leaders
         </Typography>
