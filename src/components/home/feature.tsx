@@ -163,7 +163,7 @@ const HomeFeature: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                industrial AI 
+                industrial AI{' '} 
                 <Box
                   sx={{
                     position: 'absolute',
