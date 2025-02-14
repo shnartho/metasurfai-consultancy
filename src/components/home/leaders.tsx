@@ -36,10 +36,12 @@ const Leaders: React.FC = () => {
       </Box>
       <Box
         sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexWrap: 'wrap',
-          gap: 2,
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 4,
+          maxWidth: '1400px',
+          margin: '0 auto', 
+          px: 4,
         }}
       >
         {data.map((leader) => (
@@ -49,10 +51,9 @@ const Leaders: React.FC = () => {
               display: 'flex',
               alignItems: 'center',
               p: 2,
-              backgroundColor: 'trasnparent',
+              backgroundColor: 'transparent',
               border: '1px solid white',
-              mb: 2,
-              width: '400px',
+              width: 'auto',
             }}
           >
             <Box
@@ -65,8 +66,8 @@ const Leaders: React.FC = () => {
                 mr: 8,
               }}
             >
-            <Image src={leader.photo} width={100} height={90} alt={'leader ' + leader.name} 
-            style={{ objectFit: 'cover', marginTop: 10 }}/>
+            <Image src={leader.photo} width={512} height={512} alt={'leader ' + leader.name} 
+            style={{ marginTop: 10 }}/>
             </Box>
             <Box sx={{ flex: 1 }}>
               <Typography component="h2" variant="h5" sx={{ fontSize: '1.4rem', color: 'white' }}>
