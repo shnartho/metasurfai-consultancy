@@ -20,7 +20,7 @@ const OurBusiness: FC = () => {
             sx={{
               backgroundColor: 'white',
               borderRadius: 2,
-              boxShadow: '0 4px 8px rgba(0, 110, 255, 0.2)', // Blue shadow
+              boxShadow: '0 2px 2px #0B87D7', // Blue shadow
               p: 3,
               width: '40%',
               maxWidth: '250px',
@@ -31,7 +31,7 @@ const OurBusiness: FC = () => {
             }}
           >
             <Box sx={{ mb: 2 }}>
-              <img src={item.icon} alt={item.title} style={{ width: '40px', height: '40px' }} />
+              <img src={item.icon} alt={item.title} style={{ width: '64px', height: '64px' }} />
             </Box>
             <Typography variant="h6" component="h2" sx={{ mb: 1, color: 'skyblue' }}>
               {item.title}
