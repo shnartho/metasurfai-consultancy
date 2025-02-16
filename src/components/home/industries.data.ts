@@ -3,37 +3,37 @@ import type { Industry } from '@/interfaces/industry'
 export const data: Array<Industry> = [
   {
     id: 1,
-    icon: './images/industries/videostreaming.png', // Placeholder for video streaming icon
+    icon: './images/industries/videostreaming.png',
     title: 'Video Streaming',
   },
   {
     id: 2,
-    icon: './images/industries/adtech.png', // Placeholder for adtech icon
+    icon: './images/industries/adtech.png',
     title: 'AdTech',
   },
   {
     id: 3,
-    icon: './images/industries/manatwork.png', // Placeholder for adtech icon
-    title: 'HR', //by Vitaly Gorbachev
+    icon: './images/industries/manatwork.png',
+    title: 'HR',
   },
   {
     id: 4,
-    icon: './images/industries/store.png', // Placeholder for retail icon
+    icon: './images/industries/store.png',
     title: 'Retail',
   },
   {
     id: 5,
-    icon: './images/industries/customersuccess.png', // Placeholder for customer success icon
+    icon: './images/industries/customersuccess.png',
     title: 'Customer Success',
   },
   {
     id: 6,
-    icon: './images/industries/healthcare.png', // Placeholder for health care icon
+    icon: './images/industries/healthcare.png',
     title: 'Healthcare',
   },
   {
     id: 7,
-    icon: './images/industries/coin.png', // Placeholder for fintech icon
+    icon: './images/industries/coin.png',
     title: 'FinTech',
   },
 ]
