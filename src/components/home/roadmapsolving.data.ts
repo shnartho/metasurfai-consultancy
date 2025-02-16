@@ -11,8 +11,8 @@ export const data = [
   },
   {
     id: 3,
-    title: 'Minimum Viable Product',
-    description: 'Building an MVP solution to make it available for your customers and allow you to test your product idea and gather customer feedback.',
+    title: 'Proof of Concept (PoC) Development',
+    description: 'Rapidly prototype AI solutions to validate feasibility, performance, and business value before full-scale implementation.',
   },
   {
     id: 4,
