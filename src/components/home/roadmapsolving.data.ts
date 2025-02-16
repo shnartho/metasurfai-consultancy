@@ -14,9 +14,19 @@ export const data = [
     title: 'Proof of Concept (PoC) Development',
     description: 'Rapidly prototype AI solutions to validate feasibility, performance, and business value before full-scale implementation.',
   },
-  {
+ {
     id: 4,
-    title: 'Maintenance',
-    description: 'Improvements to ensure product performance, enhance user experience and continuously keep up with the changing environment.',
+    title: 'AI Model Development & Deployment',
+    description: 'Build, train, and deploy custom AI models, ensuring they integrate seamlessly with existing business processes.',
+  },
+  {
+    id: 5,
+    title: 'AI Integration & Automation',
+    description: 'Incorporate AI solutions into enterprise systems, automating workflows and enhancing decision-making capabilities.',
+  },
+  {
+    id: 6,
+    title: 'Monitoring & Continuous Improvement',
+    description: 'Ensure AI models remain effective through performance monitoring, retraining, and ongoing optimization.',
   },
 ]
