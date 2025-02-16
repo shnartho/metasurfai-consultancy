@@ -4,10 +4,10 @@ export const data = [
     title: 'AI Strategy & Advisory',
     description: 'Assess business objectives, identify AI opportunities, and define a strategic roadmap for AI adoption.',
   },
-  {
+ {
     id: 2,
-    title: 'Proof of Value',
-    description: 'Rapidly develop a proof-of-concept (PoC) to validate and confirm the value of AI-driven business cases.',
+    title: 'AI Use Case Identification',
+    description: 'Analyze industry trends and business challenges to identify high-impact AI applications tailored to your needs.',
   },
   {
     id: 3,
