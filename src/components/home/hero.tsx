@@ -150,7 +150,7 @@ const HomeHero: FC = () => {
               <Box sx={{ '& button': { mr: 2 } }}>
                 <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="contained" onClick={handleBookMe}>
-                    Schedule a Call
+                    Book a Free Demo Meeting
                   </StyledButton>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>

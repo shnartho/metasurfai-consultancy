@@ -57,26 +57,25 @@ const HomeFeature: FC = () => {
                   width: 190,
                 }}
               >
-                <Typography variant="h5" sx={{ mb: 1 }}>
-                  Lorem ipsum dolor
-                </Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.65rem', fontWeight: 'bold', mb: 1 }}>                
+                  What our customers say about us.</Typography>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    UI/UI Design
+                    Business Growth Focused
                   </Typography>
-                  <BorderLinearProgress variant="determinate" color="inherit" value={65} order={1} />
+                  <BorderLinearProgress variant="determinate" color="inherit" value={100} order={1} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    Mobile Development
+                    Reliability & Timely
                   </Typography>
-                  <BorderLinearProgress variant="determinate" color="inherit" value={40} order={2} />
+                  <BorderLinearProgress variant="determinate" color="inherit" value={100} order={2} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
-                    Web Development
+                    Strong Collaboration
                   </Typography>
-                  <BorderLinearProgress variant="determinate" color="inherit" value={50} order={3} />
+                  <BorderLinearProgress variant="determinate" color="inherit" value={100} order={3} />
                 </Box>
               </Box>
 
@@ -103,9 +102,9 @@ const HomeFeature: FC = () => {
                     flexDirection: 'column',
                   }}
                 >
-                  <Typography sx={{ fontWeight: 600, lineHeight: 1 }}>Lorem ipsum</Typography>
+                  <Typography sx={{ fontWeight: 600, lineHeight: 1 }}>High client retention</Typography>
                   <Typography variant="subtitle1" sx={{ mb: 1, color: 'text.disabled' }}>
-                    Lorem ipsum
+                    Customer commitment
                   </Typography>
                   <Box
                     sx={{
@@ -118,7 +117,7 @@ const HomeFeature: FC = () => {
                     }}
                   >
                     <Typography variant="h4" sx={{ color: '#32dc88' }}>
-                      75%
+                      95%
                     </Typography>
                     <CircularProgress
                       sx={{ position: 'absolute', color: 'divider' }}
@@ -128,10 +127,9 @@ const HomeFeature: FC = () => {
                       size={85}
                     />
                     <CircularProgress
-                      disableShrink
                       thickness={2}
                       variant="determinate"
-                      value={75}
+                      value={95}
                       size={85}
                       sx={{ transform: 'rotate(96deg) !important', color: '#32dc88', position: 'absolute' }}
                     />
@@ -153,7 +151,8 @@ const HomeFeature: FC = () => {
                 fontWeight: 'bold',
               }}
             >
-              Make your{' '}
+              Why partner with{' '}
+              <br />
               <Typography
                 component="mark"
                 sx={{
@@ -164,13 +163,13 @@ const HomeFeature: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Learning <br />
+                industrial AI{' '} 
                 <Box
                   sx={{
                     position: 'absolute',
                     top: { xs: 20, md: 28 },
                     transform: 'rotate(3deg)',
-                    left: 2,
+                    left: 45,
                     '& img': { width: { xs: 140, md: 175 }, height: 'auto' },
                   }}
                 >
@@ -178,12 +177,11 @@ const HomeFeature: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              Enjoyable
+              consultants?
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-              Set the way of learning according to your wishes with some of the benefits that you get us, so you on
-              enjoy the lessons that we provide.
+            All our projects follow a best-in-class approach; having the best people plan and implement the right solution that delivers on your business needs.  
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

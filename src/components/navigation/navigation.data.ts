@@ -10,11 +10,8 @@ export const navigations: Navigation[] = [
     path: '',
   },
   {
-    label: '',
+    label: 'About',
     path: '',
   },
-  {
-    label: '',
-    path: '',
-  },
+
 ]
