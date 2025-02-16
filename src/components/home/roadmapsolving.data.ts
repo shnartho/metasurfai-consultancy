@@ -1,8 +1,8 @@
 export const data = [
-  {
+{
     id: 1,
-    title: 'Strategy & Consulting',
-    description: 'Reviewing your current capabilities and business goals to create your digital transformation and AI implementation plan.',
+    title: 'AI Strategy & Advisory',
+    description: 'Assess business objectives, identify AI opportunities, and define a strategic roadmap for AI adoption.',
   },
   {
     id: 2,
