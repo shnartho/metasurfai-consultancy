@@ -41,7 +41,7 @@ const Industries: FC = () => {
       </Typography>
       <Box sx={{
         width: '100%',
-        maxWidth: '1000px', // You can adjust this value based on your needs
+        maxWidth: '1000px',
         margin: '0 auto',
         position: 'relative'
       }}>
