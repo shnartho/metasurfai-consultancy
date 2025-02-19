@@ -1,71 +1,103 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { data } from './industries.data';
 
-  const Industries: FC = () => {
-    return (
-      <Box sx={{ 
-        backgroundColor: 'white',
-        py: 12,
-        px: 2
+const Industries: FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    const scroll = (): void => {
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+        scrollContainer.scrollLeft = 0;
+      } else {
+        scrollContainer.scrollLeft += 1;
+      }
+    };
+
+    const intervalId = setInterval(scroll, 30);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <Box sx={{ 
+      backgroundColor: 'white',
+      py: 12,
+      px: 2
+    }}>
+      <Typography
+        variant="h1"
+        component="h2"
+        sx={{
+          textAlign: 'center',
+          mb: 8,
+          fontWeight: 'bold'
+        }}
+      >
+        Industries where we excel in AI
+      </Typography>
+      <Box sx={{
+        width: '100%',
+        maxWidth: '1000px',
+        margin: '0 auto',
+        position: 'relative'
       }}>
-        <Typography
-          variant="h1"
-          component="h2"
+        <Box
+          ref={scrollRef}
           sx={{
-            textAlign: 'center',
-            mb: 8,
-            fontWeight: 'bold'
+            display: 'flex',
+            gap: 2,
+            overflowX: 'auto',
+            '&::-webkit-scrollbar': {
+              display: 'none'
+            },
+            msOverflowStyle: 'none',
+            scrollbarWidth: 'none',
           }}
         >
-          Industries where we excel in AI
-        </Typography>
-        <Box sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: 2,
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-        {data.map((item) => (
-          <Box
-            key={item.id}
-            sx={{
-              backgroundColor: 'black',
-              borderRadius: 2,
-              p: 2,
-              display: 'flex',
-              alignItems: 'center',
-              gap: 2,
-              height: 35,
-            }}
-          >
+          {[...data, ...data].map((item, index) => (
             <Box
-              component="img"
-              src={item.icon}
-              alt={item.title}
+              key={`${item.id}-${index}`}
               sx={{
-                width: 24,
-                height: 24,
-                filter: 'invert(1)'
-              }}
-            />
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'white',
-                whiteSpace: 'nowrap',
-                fontWeight: 500
+                backgroundColor: 'black',
+                borderRadius: 2,
+                p: 2,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 2,
+                height: 35,
+                flex: '0 0 auto',
               }}
             >
-              {item.title}
-            </Typography>
-          </Box>
-        ))}
+              <Box
+                component="img"
+                src={item.icon}
+                alt={item.title}
+                sx={{
+                  width: 24,
+                  height: 24,
+                  filter: 'invert(1)'
+                }}
+              />
+              <Typography
+                variant="body2"
+                sx={{
+                  color: 'white',
+                  whiteSpace: 'nowrap',
+                  fontWeight: 500
+                }}
+              >
+                {item.title}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
 export default Industries;
