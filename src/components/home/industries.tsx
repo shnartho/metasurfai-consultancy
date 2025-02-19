@@ -10,7 +10,7 @@ const Industries: FC = () => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    const scroll = () => {
+    const scroll = (): void => {
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0;
       } else {
