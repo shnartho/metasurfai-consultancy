@@ -25,12 +25,14 @@ const transformbusiness: FC = () => {
             variant="outlined"
             href="https://my.workee.net/consultant-metasurf-ai"
             sx={{
-              borderColor: '#8B0000',
-              color: '#8B0000',
+              borderColor: '#0066FF',
+              color: '#0066FF',
+              padding: '12px 24px',
+              fontSize: '1rem',
               width: 'fit-content',
               '&:hover': {
-                borderColor: '#8B0000',
-                backgroundColor: 'rgba(139, 0, 0, 0.04)'
+                borderColor: '#0066FF',
+                backgroundColor: 'rgba(0, 127, 139, 0.04)'
               }
             }}
           >
