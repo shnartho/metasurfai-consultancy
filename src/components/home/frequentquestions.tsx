@@ -41,7 +41,7 @@ const FrequentQuestions: FC = () => {
               }}
             >
               <AccordionSummary
-                expandIcon={<AddIcon sx={{ color: 'skyblue' }} />}
+                expandIcon={<AddIcon sx={{ color: '#0066FF' }} />}
                 sx={{
                   '& .MuiAccordionSummary-content': {
                     margin: '12px 0'
@@ -59,7 +59,7 @@ const FrequentQuestions: FC = () => {
               </AccordionDetails>
             </Accordion>
             {index < data.length - 1 && (
-              <Divider sx={{ backgroundColor: 'skyblue' }} />
+              <Divider sx={{ backgroundColor: '#0066FF' }} />
             )}
           </React.Fragment>
         ))}
