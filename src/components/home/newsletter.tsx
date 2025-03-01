@@ -1,56 +1,86 @@
 import React, { FC } from 'react'
 import Box from '@mui/material/Box'
-import InputBase from '@mui/material/InputBase'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import { StyledButton } from '../styled-button'
+import Button from '@mui/material/Button'
+import Image from 'next/image'
 
 const HomeNewsLetter: FC = () => {
   return (
-    <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
-      <Container>
+    <Box sx={{ 
+      background: 'white',
+      py: { xs: 4, md: 10 },
+    }}>
+      <Container sx={{ 
+        background: 'radial-gradient(circle at center, #4A6C86, #0E486A)',
+        width: '800px',
+        height: '180px',
+        borderRadius: 2,
+        position: 'relative',
+        pl: 4,
+        pt: 4, 
+        pb: 4, 
+      }}>
+        {/* Left Column */}
         <Box
           sx={{
-            backgroundColor: 'secondary.main',
-            borderRadius: 10,
-            py: { xs: 4, md: 10 },
-            px: { xs: 4, md: 8 },
-            textAlign: 'center',
+            width: '60%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            color: 'white',
           }}
         >
-          <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
-            Subscribe to Our News Letter
-          </Typography>
-          <Typography sx={{ mb: 6 }}>Subscribe to our newsletter to get information about our expertise.</Typography>
-
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: { xs: 'column', md: 'row' },
-              justifyContent: 'space-around',
-              width: { xs: '100%', md: 560 },
-              mx: 'auto',
+          <Typography 
+            variant="h2" 
+            component="h2" 
+            sx={{ 
+              mb: 2,
+              pl: 3,
+              fontSize: 18,
+              fontWeight: 'bold',
+              lineHeight: 1.3,
             }}
           >
-            <InputBase
-              sx={{
-                backgroundColor: 'background.paper',
-                borderRadius: 3,
-                width: '100%',
-                height: 48,
-                px: 2,
-                mr: { xs: 0, md: 3 },
-                mb: { xs: 2, md: 0 },
-              }}
-              placeholder="Enter your Email Address"
-            />
-            <Box>
-              <StyledButton disableHoverEffect size="large">
-                Subscribe
-              </StyledButton>
-            </Box>
-          </Box>
+            Free Report "Technology Trends 2025: AI and Big <br/>
+             Data Analytics"
+          </Typography>
+            <Button
+            variant="contained"
+            sx={{
+              backgroundColor: '#0066FF',
+              color: 'white',
+              padding: '8px 24px',
+              width: '175px',
+              fontSize: '12px',
+              ml: 3,
+              '&:hover': {
+              backgroundColor: '#3d8ebf',
+              }
+            }}
+            >
+            Download for free
+            </Button>
+        </Box>
+
+        {/* Right Column */}
+        <Box
+          sx={{
+            position: 'absolute',
+            right: 0,
+            top: 0,
+            height: '100%',
+            width: '300px',
+          }}
+        >
+          <Image
+            src="/images/ai-big-data-analytics.png"
+            alt="AI and Big Data Analytics Report"
+            layout="fill" 
+            style={{ objectFit: 'cover' }}
+            sizes="500px"
+          />
         </Box>
       </Container>
     </Box>
