@@ -14,7 +14,7 @@ const DynamicHomeOurBusiness = dynamic(() => import('../components/home/ourbusin
 const DynamicHomeRoadMap = dynamic(() => import('../components/home/roadmapsolving'))
 const DynamicHomeTransformBusiness = dynamic(() => import('../components/home/transformbusiness'))
 const DynamicHomeFAQ = dynamic(() => import('../components/home/frequentquestions'))
-const DynamicHomeStayWithUs = dynamic(() => import('../components/home/staywu'))
+// const DynamicHomeStayWithUs = dynamic(() => import('../components/home/staywu'))
 const Home: NextPageWithLayout = () => {
   return (
     <>
@@ -28,7 +28,7 @@ const Home: NextPageWithLayout = () => {
       <DynamicHomeTestimonial />
       <DynamicHomeFAQ />
       <DynamicHomeNewsLetter />
-      <DynamicHomeStayWithUs />
+      {/* <DynamicHomeStayWithUs /> */}
     </>
   )
 }
