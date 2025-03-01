@@ -43,8 +43,8 @@ const HomeNewsLetter: FC = () => {
               lineHeight: 1.3,
             }}
           >
-            Free Report "Technology Trends 2025: AI and Big <br/>
-             Data Analytics"
+            Free Report &quot;Technology Trends 2025: AI and Big <br/>
+            Data Analytics&quot;
           </Typography>
             <Button
             variant="contained"
