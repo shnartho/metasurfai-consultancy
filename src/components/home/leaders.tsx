@@ -11,7 +11,7 @@ const Leaders: React.FC = () => {
       sx={{
         position: 'relative',
         py: 5,
-        backgroundImage: 'url(/images/backgroundleaders.jpg)',
+        backgroundImage: 'url(/images/backgroundleaders.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

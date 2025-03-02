@@ -24,20 +24,13 @@ export const data: Array<Leader> = [
   },
   {
     id: 4,
-    photo: '/images/leaders/aktar1.jpg',
-    name: 'Aktar',
-    category: 'Senior DevOps Engineer',
-    contact: 'https://my.workee.net/consultant-metasurf-ai',
-  },
-  {
-    id: 5,
     photo: '/images/leaders/jonas.png',
     name: 'Jonas Smith',
     category: 'Full Stack Developer',
     contact: 'https://my.workee.net/consultant-metasurf-ai',
   },
   {
-    id: 6,
+    id: 5,
     photo: '/images/leaders/philip.png',
     name: 'Philip Anderson',
     category: 'Cloud Solutions Architect',
