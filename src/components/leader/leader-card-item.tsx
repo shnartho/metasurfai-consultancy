@@ -39,11 +39,7 @@ const LeaderCardItem: FC<Props> = ({ item }) => {
           {item.name}
         </Typography>
         <Typography sx={{ color: 'text.secondary' }}>{item.category}</Typography>
-        <Button
-          variant="contained"
-          sx={{ mt: 1, backgroundColor: 'red', color: 'white' }}
-          href={item.contact}
-        >
+        <Button variant="contained" sx={{ mt: 1, backgroundColor: 'red', color: 'white' }} href={item.contact}>
           Contact {item.name}
         </Button>
       </Box>

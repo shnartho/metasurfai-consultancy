@@ -29,7 +29,7 @@ export const data: Array<Testimonial> = [
     id: 3,
     title: 'Game-Changing AI Strategy',
     content:
-      'MetaSurf AI\'s consultation helped us develop a comprehensive AI roadmap. Their insights into predictive analytics transformed our decision-making process. They truly understand both the technical and business aspects of AI implementation.',
+      "MetaSurf AI's consultation helped us develop a comprehensive AI roadmap. Their insights into predictive analytics transformed our decision-making process. They truly understand both the technical and business aspects of AI implementation.",
     user: {
       id: 1,
       name: 'John Watson',

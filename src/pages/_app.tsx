@@ -29,7 +29,7 @@ const App: FC<AppPropsWithLayout> = (props: AppPropsWithLayout) => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-      <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(c, s, q, u, a, r, e) {

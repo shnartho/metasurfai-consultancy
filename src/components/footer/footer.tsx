@@ -19,7 +19,9 @@ const Footer: FC = () => {
                 Metasurf consultancy
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-              MetaSurf AI Consultancy specializes in AI-driven automation and optimization, helping businesses streamline operations and enhance efficiency.              </Typography>
+                MetaSurf AI Consultancy specializes in AI-driven automation and optimization, helping businesses
+                streamline operations and enhance efficiency.{' '}
+              </Typography>
               <FooterSocialLinks />
             </Box>
           </Grid>

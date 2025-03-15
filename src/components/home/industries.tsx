@@ -1,50 +1,54 @@
-import React, { FC, useEffect, useRef } from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { data } from './industries.data';
+import React, { FC, useEffect, useRef } from 'react'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import { data } from './industries.data'
 
 const Industries: FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
+    const scrollContainer = scrollRef.current
+    if (!scrollContainer) return
 
     const scroll = (): void => {
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-        scrollContainer.scrollLeft = 0;
+        scrollContainer.scrollLeft = 0
       } else {
-        scrollContainer.scrollLeft += 1;
+        scrollContainer.scrollLeft += 1
       }
-    };
+    }
 
-    const intervalId = setInterval(scroll, 30);
-    return () => clearInterval(intervalId);
-  }, []);
+    const intervalId = setInterval(scroll, 30)
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
-    <Box sx={{ 
-      backgroundColor: 'white',
-      py: 12,
-      px: 2
-    }}>
+    <Box
+      sx={{
+        backgroundColor: 'white',
+        py: 12,
+        px: 2,
+      }}
+    >
       <Typography
         variant="h1"
         component="h2"
         sx={{
           textAlign: 'center',
           mb: 8,
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       >
         Industries where we excel in AI
       </Typography>
-      <Box sx={{
-        width: '100%',
-        maxWidth: '1000px',
-        margin: '0 auto',
-        position: 'relative'
-      }}>
+      <Box
+        sx={{
+          width: '100%',
+          maxWidth: '1000px',
+          margin: '0 auto',
+          position: 'relative',
+        }}
+      >
         <Box
           ref={scrollRef}
           sx={{
@@ -52,7 +56,7 @@ const Industries: FC = () => {
             gap: 2,
             overflowX: 'auto',
             '&::-webkit-scrollbar': {
-              display: 'none'
+              display: 'none',
             },
             msOverflowStyle: 'none',
             scrollbarWidth: 'none',
@@ -79,7 +83,7 @@ const Industries: FC = () => {
                 sx={{
                   width: 24,
                   height: 24,
-                  filter: 'invert(1)'
+                  filter: 'invert(1)',
                 }}
               />
               <Typography
@@ -87,7 +91,7 @@ const Industries: FC = () => {
                 sx={{
                   color: 'white',
                   whiteSpace: 'nowrap',
-                  fontWeight: 500
+                  fontWeight: 500,
                 }}
               >
                 {item.title}
@@ -97,7 +101,7 @@ const Industries: FC = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Industries;
+export default Industries

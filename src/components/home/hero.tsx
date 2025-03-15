@@ -48,8 +48,8 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 }
 
 const handleBookMe = (): void => {
-  window.open('https://my.workee.net/consultant-metasurf-ai', '_blank');
-};
+  window.open('https://my.workee.net/consultant-metasurf-ai', '_blank')
+}
 
 const HomeHero: FC = () => {
   return (
@@ -134,7 +134,7 @@ const HomeHero: FC = () => {
                       </g>
                     </svg>
                   </Typography>{' '}
-                  <br/>
+                  <br />
                   Business with
                   <br />
                   AI & Automation
@@ -143,7 +143,7 @@ const HomeHero: FC = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "We help businesses integrate AI to optimize processes, enhance customer experiences, and unlock new revenue streams."
+                    'We help businesses integrate AI to optimize processes, enhance customer experiences, and unlock new revenue streams.'
                   }
                 </Typography>
               </Box>
@@ -154,7 +154,13 @@ const HomeHero: FC = () => {
                   </StyledButton>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="outlined" onClick={handleBookMe} startIcon={<PlayArrowIcon />}>
+                  <StyledButton
+                    color="primary"
+                    size="large"
+                    variant="outlined"
+                    onClick={handleBookMe}
+                    startIcon={<PlayArrowIcon />}
+                  >
                     Watch Demo
                   </StyledButton>
                 </ScrollLink>
@@ -162,8 +168,8 @@ const HomeHero: FC = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} sx={{ position: 'relative', display: 'flex', alignItems: 'flex-end' }}>
-          <Box sx={{ lineHeight: 0, position: 'relative', top: { xs: -10, md: -20 } }}>
-          <Image src="/images/home-hero2.jpg" width={775} height={687} alt="Hero img" />
+            <Box sx={{ lineHeight: 0, position: 'relative', top: { xs: -10, md: -20 } }}>
+              <Image src="/images/home-hero2.jpg" width={775} height={687} alt="Hero img" />
               <meta name="author" content="Freepik" />
               <meta name="source" content="https://i.ibb.co/kR9sK2P/consult3.png" />
             </Box>
