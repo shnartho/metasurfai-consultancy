@@ -12,20 +12,24 @@ const HomeNewsLetter: FC = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
-    <Box sx={{ 
-      background: 'white',
-      py: { xs: 2, sm: 3, md: 10 },
-    }}>
-      <Container sx={{ 
-        background: 'radial-gradient(circle at center, #4A6C86, #0E486A)',
-        width: { xs: '100%', sm: '600px', md: '800px' },
-        height: { xs: 'auto', sm: '180px' },
-        borderRadius: 2,
-        position: 'relative',
-        p: { xs: 2, sm: 4 },
-        display: 'flex',
-        flexDirection: { xs: 'column', sm: 'row' },
-      }}>
+    <Box
+      sx={{
+        background: 'white',
+        py: { xs: 2, sm: 3, md: 10 },
+      }}
+    >
+      <Container
+        sx={{
+          background: 'radial-gradient(circle at center, #4A6C86, #0E486A)',
+          width: { xs: '100%', sm: '600px', md: '800px' },
+          height: { xs: 'auto', sm: '180px' },
+          borderRadius: 2,
+          position: 'relative',
+          p: { xs: 2, sm: 4 },
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+        }}
+      >
         {/* Left Column */}
         <Box
           sx={{
@@ -38,10 +42,10 @@ const HomeNewsLetter: FC = () => {
             mb: { xs: 2, sm: 0 },
           }}
         >
-          <Typography 
-            variant="h2" 
-            component="h2" 
-            sx={{ 
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{
               mb: 2,
               pl: { xs: 0, sm: 3 },
               fontSize: { xs: 16, sm: 18 },
@@ -51,7 +55,7 @@ const HomeNewsLetter: FC = () => {
             }}
           >
             Free Report &quot;Technology Trends 2025: AI and Big
-            {!isMobile && <br/>} Data Analytics&quot;
+            {!isMobile && <br />} Data Analytics&quot;
           </Typography>
           <Button
             variant="contained"
@@ -64,7 +68,7 @@ const HomeNewsLetter: FC = () => {
               ml: { xs: 0, sm: 3 },
               '&:hover': {
                 backgroundColor: '#3d8ebf',
-              }
+              },
             }}
           >
             Download for free
@@ -85,9 +89,9 @@ const HomeNewsLetter: FC = () => {
             src="/images/ai-big-data-analytics.png"
             alt="AI and Big Data Analytics Report"
             layout="fill"
-            style={{ 
+            style={{
               objectFit: 'cover',
-              borderRadius: isMobile ? '8px' : '0'
+              borderRadius: isMobile ? '8px' : '0',
             }}
             sizes="(max-width: 600px) 100vw, 300px"
           />

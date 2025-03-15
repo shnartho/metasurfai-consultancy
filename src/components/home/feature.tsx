@@ -57,8 +57,9 @@ const HomeFeature: FC = () => {
                   width: 190,
                 }}
               >
-                <Typography variant="caption" sx={{ fontSize: '0.65rem', fontWeight: 'bold', mb: 1 }}>                
-                  What our customers say about us.</Typography>
+                <Typography variant="caption" sx={{ fontSize: '0.65rem', fontWeight: 'bold', mb: 1 }}>
+                  What our customers say about us.
+                </Typography>
                 <Box sx={{ mb: 2 }}>
                   <Typography variant="subtitle1" color="text.secondary">
                     Business Growth Focused
@@ -151,8 +152,7 @@ const HomeFeature: FC = () => {
                 fontWeight: 'bold',
               }}
             >
-              Why partner with{' '}
-              <br />
+              Why partner with <br />
               <Typography
                 component="mark"
                 sx={{
@@ -163,7 +163,7 @@ const HomeFeature: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                industrial AI{' '} 
+                industrial AI{' '}
                 <Box
                   sx={{
                     position: 'absolute',
@@ -181,7 +181,8 @@ const HomeFeature: FC = () => {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-            All our projects follow a best-in-class approach; having the best people plan and implement the right solution that delivers on your business needs.  
+              All our projects follow a best-in-class approach; having the best people plan and implement the right
+              solution that delivers on your business needs.
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

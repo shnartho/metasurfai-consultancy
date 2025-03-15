@@ -35,25 +35,27 @@ const Leaders: React.FC = () => {
         }}
       />
       <Box sx={{ position: 'relative', zIndex: 2 }}>
-        <Box sx={{ 
-          textAlign: 'begin', 
-          mb: { xs: 3, sm: 4, md: 5 }, 
-          ml: { xs: 4, sm: 8, md: 19 }
-        }}>
-          <img 
-            src="/images/leaders/message.png" 
-            alt="Channel Icon" 
-            style={{ 
+        <Box
+          sx={{
+            textAlign: 'begin',
+            mb: { xs: 3, sm: 4, md: 5 },
+            ml: { xs: 4, sm: 8, md: 19 },
+          }}
+        >
+          <img
+            src="/images/leaders/message.png"
+            alt="Channel Icon"
+            style={{
               filter: 'invert(1)',
-              width: isMobile ? '40px' : '48px'
+              width: isMobile ? '40px' : '48px',
             }}
           />
-          <Typography 
-            variant="h2" 
-            sx={{ 
-              mt: 2, 
+          <Typography
+            variant="h2"
+            sx={{
+              mt: 2,
               color: 'white',
-              fontSize: { xs: '1.8rem', sm: '2.2rem', md: '2.5rem' }
+              fontSize: { xs: '1.8rem', sm: '2.2rem', md: '2.5rem' },
             }}
           >
             Our AI leaders
@@ -97,47 +99,49 @@ const Leaders: React.FC = () => {
                   mr: { xs: 0, sm: 4, md: 8 },
                 }}
               >
-                <Image 
-                  src={leader.photo} 
-                  width={512} 
-                  height={512} 
+                <Image
+                  src={leader.photo}
+                  width={512}
+                  height={512}
                   alt={'leader ' + leader.name}
-                  style={{ 
+                  style={{
                     marginTop: 10,
                     width: '100%',
-                    height: 'auto'
+                    height: 'auto',
                   }}
                 />
               </Box>
-              <Box sx={{ 
-                flex: 1,
-                textAlign: { xs: 'center', sm: 'left' }
-              }}>
-                <Typography 
-                  component="h2" 
-                  variant="h5" 
-                  sx={{ 
+              <Box
+                sx={{
+                  flex: 1,
+                  textAlign: { xs: 'center', sm: 'left' },
+                }}
+              >
+                <Typography
+                  component="h2"
+                  variant="h5"
+                  sx={{
                     fontSize: { xs: '1.2rem', sm: '1.3rem', md: '1.4rem' },
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   {leader.name}
                 </Typography>
-                <Typography 
-                  sx={{ 
+                <Typography
+                  sx={{
                     color: 'white',
-                    fontSize: { xs: '0.9rem', sm: '1rem' }
+                    fontSize: { xs: '0.9rem', sm: '1rem' },
                   }}
                 >
                   {leader.category}
                 </Typography>
                 <Button
                   variant="contained"
-                  sx={{ 
+                  sx={{
                     mt: 1,
                     backgroundColor: 'red',
                     color: 'white',
-                    width: { xs: '100%', sm: 'auto' }
+                    width: { xs: '100%', sm: 'auto' },
                   }}
                   href={leader.contact}
                 >

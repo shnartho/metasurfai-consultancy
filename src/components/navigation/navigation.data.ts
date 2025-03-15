@@ -13,5 +13,4 @@ export const navigations: Navigation[] = [
     label: 'About',
     path: '/about',
   },
-
 ]

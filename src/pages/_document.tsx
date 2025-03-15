@@ -17,9 +17,9 @@ class MyDocument extends Document<DocumentProps> {
     return (
       <Html lang="en">
         <Head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
               (function(c, s, q, u, a, r, e) {
                 c.hj=c.hj||function(){(c.hj.q=c.hj.q||[]).push(arguments)};
                 c._hjSettings = { hjid: a };
@@ -30,8 +30,8 @@ class MyDocument extends Document<DocumentProps> {
                 r.appendChild(e);
               })(window, document, 'https://static.hj.contentsquare.net/c/csq-', '.js', 5323233);
             `,
-          }}
-        />
+            }}
+          />
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />

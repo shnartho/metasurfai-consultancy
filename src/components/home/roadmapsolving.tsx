@@ -1,31 +1,31 @@
-import React, { FC } from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { data } from './roadmapsolving.data';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import React, { FC } from 'react'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import { data } from './roadmapsolving.data'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const RoadmapSolving: FC = () => {
-  const isMobile = useMediaQuery('(max-width:695px)');
+  const isMobile = useMediaQuery('(max-width:695px)')
 
   return (
-    <Box 
-      sx={{ 
+    <Box
+      sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        p: { xs: 2, md: 8 }, 
+        p: { xs: 2, md: 8 },
         py: { xs: 6, md: 12 },
-        backgroundColor: 'white'
+        backgroundColor: 'white',
       }}
     >
-      <Typography 
-        variant="h3" 
-        component="h2" 
-        sx={{ 
+      <Typography
+        variant="h3"
+        component="h2"
+        sx={{
           mb: 8,
           textAlign: 'center',
           fontWeight: 'bold',
-          fontSize: { xs: '2rem', md: '3rem' }
+          fontSize: { xs: '2rem', md: '3rem' },
         }}
       >
         How We Solve Problems
@@ -71,7 +71,7 @@ const RoadmapSolving: FC = () => {
             key={item.id}
             sx={{
               display: 'flex',
-              flexDirection: isMobile ? 'column' : (index % 2 === 0 ? 'row-reverse' : 'row'),
+              flexDirection: isMobile ? 'column' : index % 2 === 0 ? 'row-reverse' : 'row',
               alignItems: isMobile ? 'flex-start' : 'center',
               mb: 10,
               position: 'relative',
@@ -87,7 +87,7 @@ const RoadmapSolving: FC = () => {
                   top: '23px',
                   transform: 'translate(-50%, 0)',
                   width: '15px',
-                  height: '15px',                
+                  height: '15px',
                   borderRadius: '50%',
                   border: '4px solid #0066FF',
                   backgroundColor: 'white',
@@ -99,7 +99,7 @@ const RoadmapSolving: FC = () => {
             <Box
               sx={{
                 width: isMobile ? '100%' : '49%',
-                textAlign: isMobile ? 'left' : (index % 2 === 0 ? 'left' : 'right'),
+                textAlign: isMobile ? 'left' : index % 2 === 0 ? 'left' : 'right',
                 pl: isMobile ? 2 : 0,
                 pr: isMobile ? 2 : 0,
               }}
@@ -117,23 +117,24 @@ const RoadmapSolving: FC = () => {
                     right: index % 2 !== 0 ? 'calc(50% + 5px)' : 'auto',
                     width: '200px',
                     height: '2px',
-                    background: index % 2 === 0
-                      ? 'linear-gradient(to right, #0066FF 10%, transparent)'
-                      : 'linear-gradient(to left, #0066FF 10%, transparent)',
-                    zIndex: 3,                  
+                    background:
+                      index % 2 === 0
+                        ? 'linear-gradient(to right, #0066FF 10%, transparent)'
+                        : 'linear-gradient(to left, #0066FF 10%, transparent)',
+                    zIndex: 3,
                     margin: '0 auto',
                   }}
                 />
               )}
 
-              <Typography 
-                variant="body2" 
-                sx={{ 
-                  wordWrap: 'break-word', 
+              <Typography
+                variant="body2"
+                sx={{
+                  wordWrap: 'break-word',
                   lineHeight: 1.5,
                   maxWidth: isMobile ? '100%' : '200px',
-                  marginLeft: isMobile ? '0' : (index % 2 === 0 ? '0' : 'auto'),
-                  marginRight: isMobile ? '0' : (index % 2 === 0 ? 'auto' : '0'),
+                  marginLeft: isMobile ? '0' : index % 2 === 0 ? '0' : 'auto',
+                  marginRight: isMobile ? '0' : index % 2 === 0 ? 'auto' : '0',
                   mt: 2,
                 }}
               >
@@ -144,7 +145,7 @@ const RoadmapSolving: FC = () => {
         ))}
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default RoadmapSolving;
+export default RoadmapSolving

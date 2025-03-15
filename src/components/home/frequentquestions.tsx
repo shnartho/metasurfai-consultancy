@@ -10,20 +10,22 @@ import { data } from './frequentquestions.data'
 
 const FrequentQuestions: FC = () => {
   return (
-    <Box sx={{ 
-      p: 4,
-      backgroundColor: 'white',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center'
-    }}>
+    <Box
+      sx={{
+        p: 4,
+        backgroundColor: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <Typography
         variant="h4"
         component="h2"
         sx={{
           textAlign: 'center',
           mb: 4,
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       >
         Frequently Asked Questions
@@ -32,35 +34,29 @@ const FrequentQuestions: FC = () => {
       <Box sx={{ width: '100%', maxWidth: 800 }}>
         {data.map((item, index) => (
           <React.Fragment key={item.id}>
-            <Accordion 
-              sx={{ 
+            <Accordion
+              sx={{
                 boxShadow: 'none',
                 '&:before': {
-                  display: 'none'
-                }
+                  display: 'none',
+                },
               }}
             >
               <AccordionSummary
                 expandIcon={<AddIcon sx={{ color: '#0066FF' }} />}
                 sx={{
                   '& .MuiAccordionSummary-content': {
-                    margin: '12px 0'
-                  }
+                    margin: '12px 0',
+                  },
                 }}
               >
-                <Typography variant="h6">
-                  {item.question}
-                </Typography>
+                <Typography variant="h6">{item.question}</Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography>
-                  {item.answer}
-                </Typography>
+                <Typography>{item.answer}</Typography>
               </AccordionDetails>
             </Accordion>
-            {index < data.length - 1 && (
-              <Divider sx={{ backgroundColor: '#0066FF' }} />
-            )}
+            {index < data.length - 1 && <Divider sx={{ backgroundColor: '#0066FF' }} />}
           </React.Fragment>
         ))}
       </Box>
@@ -69,4 +65,3 @@ const FrequentQuestions: FC = () => {
 }
 
 export default FrequentQuestions
-

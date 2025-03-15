@@ -8,34 +8,36 @@ const OurBusiness: FC = () => {
   const isMobile = useMediaQuery('(max-width:768px)')
 
   return (
-    <Box sx={{ 
-      p: { xs: 2, md: 4 }, 
-      backgroundColor: 'white', 
-      position: 'relative', 
-      overflow: 'hidden' 
-    }}>
-      <Typography 
-        variant="h1" 
-        component="h1" 
-        sx={{ 
-          mb: 2, 
-          textAlign: 'center', 
+    <Box
+      sx={{
+        p: { xs: 2, md: 4 },
+        backgroundColor: 'white',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      <Typography
+        variant="h1"
+        component="h1"
+        sx={{
+          mb: 2,
+          textAlign: 'center',
           color: '#0066FF',
-          fontSize: { xs: '2rem', md: '3rem' }
+          fontSize: { xs: '2rem', md: '3rem' },
         }}
       >
         Consulting Services For Businesses
       </Typography>
-      <Typography 
-        variant="body1" 
-        sx={{ 
-          mb: 4, 
+      <Typography
+        variant="body1"
+        sx={{
+          mb: 4,
           textAlign: 'center',
-          px: { xs: 2, md: 0 }
+          px: { xs: 2, md: 0 },
         }}
       >
         We help you create scalable products and services with intuitive design and robust implementation, aiming to
-        {!isMobile && <br/>}meet both your business objectives and your customers&apos; expectations.
+        {!isMobile && <br />}meet both your business objectives and your customers&apos; expectations.
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 4, justifyContent: 'center' }}>
         {data.map((item) => (

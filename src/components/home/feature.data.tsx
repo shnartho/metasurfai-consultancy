@@ -28,7 +28,8 @@ export const data: Data[] = [
   },
   {
     title: 'Risk mitigation',
-    description: 'Al consultants help reduce risks in adopting Al, from data privacy concerns to ethical considerations, ensuring responsible and compliant implementation.',
+    description:
+      'Al consultants help reduce risks in adopting Al, from data privacy concerns to ethical considerations, ensuring responsible and compliant implementation.',
     icon: <ContactSupportIcon />,
   },
 ]

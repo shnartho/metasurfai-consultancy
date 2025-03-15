@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { keyframes } from '@mui/system';
+import React, { FC } from 'react'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import { keyframes } from '@mui/system'
 
 interface CompanyLogo {
-  name: string;
-  logo: string;
+  name: string
+  logo: string
 }
 
 const companies: CompanyLogo[] = [
@@ -15,22 +15,17 @@ const companies: CompanyLogo[] = [
   { name: 'Company 4', logo: '/images/logos/company4.png' },
   { name: 'Company 5', logo: '/images/logos/company5.png' },
   // Add more companies as needed
-];
+]
 
 const scroll = keyframes`
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-`;
+`
 
 const TrustedBy: FC = () => {
   return (
     <Box sx={{ backgroundColor: 'white', py: 6, overflow: 'hidden' }}>
-      <Typography 
-        variant="h4" 
-        component="h2" 
-        align="center" 
-        sx={{ mb: 4, color: '#333' }}
-      >
+      <Typography variant="h4" component="h2" align="center" sx={{ mb: 4, color: '#333' }}>
         Trusted By
       </Typography>
 
@@ -86,7 +81,7 @@ const TrustedBy: FC = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default TrustedBy;
+export default TrustedBy
