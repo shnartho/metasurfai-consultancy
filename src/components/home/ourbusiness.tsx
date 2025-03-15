@@ -35,7 +35,7 @@ const OurBusiness: FC = () => {
         }}
       >
         We help you create scalable products and services with intuitive design and robust implementation, aiming to
-        {!isMobile && <br/>}meet both your business objectives and your customers' expectations.
+        {!isMobile && <br/>}meet both your business objectives and your customers&apos; expectations.
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 4, justifyContent: 'center' }}>
         {data.map((item) => (
